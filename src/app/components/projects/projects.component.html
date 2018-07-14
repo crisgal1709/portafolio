@@ -1,4 +1,7 @@
-<div class="container">
+<div *ngIf="!load" class="loader">
+</div>
+
+<div class="container" *ngIf="load">
 	<h2>Proyectos</h2>
 
 	<ul>

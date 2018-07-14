@@ -13,27 +13,33 @@ export class ProjectsComponent implements OnInit {
 
 	public projects: Project[];
 	public url: string;
+  public load: boolean;
 
   constructor(
   	private _projectService: ProjectService
   ) {
   	this.url = Global.url;
+    this.load = false;
   }
 
   ngOnInit() {
   	this.getProjects();
+
   }
 
   getProjects(){
   	this._projectService.getProjects().subscribe(
   		response => {
   			this.projects = response.projects
+        this.load = true;
   		},
 
   		error => {
   			console.log(error)
   		}
+
   	)
+
   }
 
 }

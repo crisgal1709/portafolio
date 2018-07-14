@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.css"
+              "src/assets/css/styles.css",
+              "src/assets/bxslider/dist/jquery.bxslider.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/bxslider/dist/jquery.bxslider.min.js"
+            ]
           },
           "configurations": {
             "production": {

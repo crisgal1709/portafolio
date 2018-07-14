@@ -1,5 +1,8 @@
+<div *ngIf="!load" class="loader">
+</div>
 
-<div class="container" *ngIf="project">
+
+<div class="container" *ngIf="load">
 
 	<div class="image">
 		<img src="{{ url + 'get-image/' + project.image }}" *ngIf="project.image">

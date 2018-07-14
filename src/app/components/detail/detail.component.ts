@@ -13,6 +13,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router'
 export class DetailComponent implements OnInit {
 	public url: string;
 	public project: Project;
+  public load: boolean;
 
   constructor(
   	private _projectService: ProjectService,
@@ -20,6 +21,7 @@ export class DetailComponent implements OnInit {
   	private _route: ActivatedRoute,
   ) { 
   	this.url = Global.url;
+    this.load = false;
   }
 
   ngOnInit() {
@@ -33,6 +35,7 @@ export class DetailComponent implements OnInit {
   	this._projectService.getProject(id).subscribe(
   		response => {
   			this.project = response.project;
+        this.load = true;
   		},
 
   		error => {
