@@ -19,8 +19,8 @@
 body{
 	font-family: "yanone", Arial, Helvetica;
 	font-size: 20px;
-	background: url("../img/pattern.png");
-	background-attachment: fixed;
+	/*background: url("/../img/pattern.png");
+	background-attachment: fixed;*/
 }
 
 .loader{
