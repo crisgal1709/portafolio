@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
   constructor() {
   	this.title = 'Cristian Galeano';
   	this.subTitle = 'Desarrollador Web, PHP y Laravel expert';
-  	this.web = 'cristian.galeano1913@gmail.com';
+  	this.web = 'correo@example.com';
    }
 
   ngOnInit() {
